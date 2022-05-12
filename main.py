@@ -1,10 +1,8 @@
 from random import random
 
 def montecarlo(n):
-  temp = 0
-  for _ in range(n):
-    temp += random()
-  return temp/n
+  temp = (random() for _ in range(n)) 
+  return sum(temp)/n
 
-for _ in range(5):
+for _ in range(10):
   print(montecarlo(1000000))
