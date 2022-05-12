@@ -1,11 +1,10 @@
-def cosa():
-  print("Hello world!")
+from random import random
 
-cosa()
+def montecarlo(n):
+  temp = 0
+  for _ in range(n):
+    temp += random()
+  return temp/n
 
-def mangiare():
-  print("ciao")
-
-mangiare()
-
-"dopodomani sarà un giorno buono"
+for _ in range(5):
+  print(montecarlo(1000000))
