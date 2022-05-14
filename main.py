@@ -9,4 +9,5 @@ pi_est = lambda n : sum((dist for _ in range(n)))/n
 # for _ in range(10):
 #   print(montecarlo(1000000))
 
-print(pi_est(100))
+for _ in range(10):
+  print(pi_est(100))
