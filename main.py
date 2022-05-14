@@ -8,4 +8,4 @@ for _ in range(10):
   print(montecarlo(random, 1000000))
 
 for _ in range(10):
-  print(4 * montcarlo(dist, 1000000))
+  print(4 * montecarlo(dist, 1000000))
