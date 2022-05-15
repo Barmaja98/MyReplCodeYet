@@ -1,7 +1,7 @@
 from random import random
 from math import exp, abs
 
-nats = ￼lambda : abs(exp(random())) < 1
+nats = lambda : abs(exp(random())) < 1
 dist = lambda : ((x := random())*x + (y := random())*y) < 1
 montecarlo = lambda fx, n : sum((fx() for _ in range(n)))/n
 
